@@ -19,10 +19,10 @@ public class Program {
 		System.out.print("Price -> ");
 		double price = sc.nextDouble();
 
-		System.out.print("Quantity in stock -> ");
-		int quantity = sc.nextInt();
+		/*System.out.print("Quantity in stock -> ");
+		int quantity = sc.nextInt(); */
 		
-		Product product = new Product(name, price, quantity);
+		Product product = new Product(name, price/* , quantity */);
 
 		System.out.println("* Product data: " + product);
 
