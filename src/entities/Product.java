@@ -6,54 +6,47 @@ public class Product {
 	private double price;
 	private int quantity;
 
-	/** 
+	/**
 	 * Construtor padrão
 	 */
 	public Product() {
-	};
+	}
 
-	/**
-	 * Construtor completo
-	 * @param name
-	 * @param price
-	 * @param quantity
-	 */
 	public Product(String name, double price, int quantity) {
+		/*
+		 * Se a sua classe for subclasse de outra classe que executa algo importante no
+		 * construtor, vai chamar o construtor da superclasse (classe pai) super();
+		 */
 		this.name = name;
 		this.price = price;
 		this.quantity = quantity;
 	}
 
-	/**
-	 * Construtor sem quantidade de estoque
-	 * @param name
-	 * @param price
-	 */
 	public Product(String name, double price) {
 		this.name = name;
 		this.price = price;
 	}
-	
+
 	public String getName() {
 		return name;
 	}
-	
+
 	public void setName(String name) {
 		this.name = name;
 	}
-	
+
 	public double getPrice() {
 		return price;
 	}
-	
+
 	public void setPrice(double price) {
 		this.price = price;
 	}
-	
+
 	public int getQuantity() {
 		return quantity;
 	}
-	
+
 	public double TotalValueInStock() {
 		return price * quantity;
 	}
